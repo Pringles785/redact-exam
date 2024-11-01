@@ -2,10 +2,10 @@ import themes from "daisyui/src/theming/themes";
 
 const config = {
   // REQUIRED
-  appName: "ShipFast",
+  appName: "TestRedact",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app.",
+    "Redact your tests in minutes, not hours.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
   domainName: "shipfa.st",
   crisp: {
@@ -17,49 +17,51 @@ const config = {
   stripe: {
     // Create multiple plans in your Stripe dashboard, then add them here. You can add as many plans as you want, just make sure to add the priceId
     plans: [
-      {
+      /*{
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         priceId:
           process.env.NODE_ENV === "development"
             ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter",
+        name: "TestRedactor",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Full-cycle test redaction for any team",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 79,
+        price: 480,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 99,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Unlimited page volume per test",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "Approved Circular 64 redaction methods" },
+          { name: "Auto-redact" },
+          { name: "Data and metadata permanently removed"},
+          { name: "Quality control review workflows"},
+          { name: "Reviewer comments"},
+          { name: "Two user licenses included"},
         ],
-      },
+      },*/
       {
         // This plan will look different on the pricing page, it will be highlighted. You can only have one plan with isFeatured: true
-        isFeatured: true,
+        isFeatured: false,
         priceId:
           process.env.NODE_ENV === "development"
             ? "price_1O5KtcAxyNprDp7iftKnrrpw"
             : "price_456",
-        name: "Advanced",
-        description: "You need more power",
-        price: 99,
-        priceAnchor: 149,
+        name: "TestRedactor + Examiner Screen",
+        description: "Full-cycle test redaction for any team",
+        price: 500,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Unlimited page volume",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "Approved Circular 64 redaction methods" },
+          { name: "Auto-redact entirely in 5 mins" },
+          { name: "Data and metadata permanently removed" },
+          { name: "Test management and review workflows" },
+          { name: "Side-by-side examiner screen"},
+          { name: "Two user licenses included"},
         ],
       },
     ],

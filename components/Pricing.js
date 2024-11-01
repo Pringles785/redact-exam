@@ -10,9 +10,9 @@ const Pricing = () => {
     <section className="bg-base-200 overflow-hidden" id="pricing">
       <div className="py-24 px-8 max-w-5xl mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <p className="font-medium text-primary mb-8">Pricing</p>
+          <p className="font-medium text-primary mb-8">Simple Transparent Pricing</p>
           <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-            Save hours of repetitive code and ship faster!
+            Save hours of repetitive redacting and get secure tests registered fast!
           </h2>
         </div>
 
@@ -24,7 +24,7 @@ const Pricing = () => {
                   <span
                     className={`badge text-xs text-primary-content font-semibold border-0 bg-primary`}
                   >
-                    POPULAR
+                    MOST POPULAR
                   </span>
                 </div>
               )}
@@ -61,8 +61,8 @@ const Pricing = () => {
                     ${plan.price}
                   </p>
                   <div className="flex flex-col justify-end mb-[4px]">
-                    <p className="text-xs text-base-content/60 uppercase font-semibold">
-                      USD
+                    <p className="text-lg text-base-content/60 uppercase font-semibold">
+                      PER TEST OR TEST ITEM GROUP
                     </p>
                   </div>
                 </div>
@@ -89,10 +89,14 @@ const Pricing = () => {
                   </ul>
                 )}
                 <div className="space-y-2">
-                  <ButtonCheckout priceId={plan.priceId} />
-
+                  {/*<ButtonCheckout priceId={plan.priceId} />*/}
+                  <button className="btn btn-primary btn-block group">
+          <a href='https://calendly.com/darrenfreeman374' target="_blank">
+            Schedule a Demo
+          </a>
+        </button>
                   <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
-                    Pay once. Access forever.
+                    
                   </p>
                 </div>
               </div>

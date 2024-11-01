@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
-import logo from "@/app/icon.png";
+import logo from "@/public/Images/redactestlogo.png";
 import config from "@/config";
 
 const links = [
@@ -15,7 +15,7 @@ const links = [
   },
   {
     href: "/#testimonials",
-    label: "Reviews",
+    label: "How it works",
   },
   {
     href: "/#faq",

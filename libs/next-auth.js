@@ -24,19 +24,19 @@ export const authOptions = {
     }),
     // Follow the "Login with Email" tutorial to set up your email server
     // Requires a MongoDB database. Set MONOGODB_URI env variable.
-    ...(connectMongo
+    /*...(connectMongo
       ? [
           EmailProvider({
             server: process.env.EMAIL_SERVER,
             from: config.mailgun.fromNoReply,
           }),
         ]
-      : []),
+      : []),*/
   ],
   // New users will be saved in Database (MongoDB Atlas). Each user (model) has some fields like name, email, image, etc..
   // Requires a MongoDB database. Set MONOGODB_URI env variable.
   // Learn more about the model type: https://next-auth.js.org/v3/adapters/models
-  ...(connectMongo && { adapter: MongoDBAdapter(connectMongo) }),
+  //...(connectMongo && { adapter: MongoDBAdapter(connectMongo) }),
 
   callbacks: {
     session: async ({ session, token }) => {

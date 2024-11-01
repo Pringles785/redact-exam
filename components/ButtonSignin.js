@@ -12,8 +12,10 @@ import config from "@/config";
 const ButtonSignin = ({ text = "Get started", extraStyle }) => {
   const router = useRouter();
   const { data: session, status } = useSession();
-
   const handleClick = () => {
+    window.open ('https://calendly.com/darrenfreeman374', '_blank')
+  }
+  /*const handleClick = () => {
     if (status === "authenticated") {
       router.push(config.auth.callbackUrl);
     } else {
@@ -44,7 +46,7 @@ const ButtonSignin = ({ text = "Get started", extraStyle }) => {
         {session.user?.name || session.user?.email || "Account"}
       </Link>
     );
-  }
+  }*/
 
   return (
     <button

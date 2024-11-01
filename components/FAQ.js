@@ -7,22 +7,37 @@ import { useRef, useState } from "react";
 
 const faqList = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "How is TestRedact better than other redaction tools?",
+    answer: <div className="space-y-2 leading-relaxed">Other tools are built for general redaction needs, which creates gaps that slow you down. Our tool is built specifically for redacting tests, which means you maximize speed & accuracy, comply with Circular 64 requirements, and get test-related feature improvements. </div>,
   },
-  {
-    question: "Can I get a refund?",
+  { 
+    question: "What ways do you keep our tests secure?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        We're hosted securely on AWS. We support single sign-on, multi-factor auth, password protected tests, and document retention periods.
+      </p>
+    )
+  },
+  {
+    question: "How accurate are your redactions?",
+    answer: (
+      <p>
+        No solution is perfect. We are 99.9% accurate, which is why we still strongly encourage a human review workflow as best practice before finalizing and submitting to the US Copyright Office.
+      </p>
+    ),
+  },
+  { 
+    question: "Can you redact manually if you need to?",
+    answer: (
+      <p>
+        Yes, you can redact manually in the tool.
       </p>
     ),
   },
   {
-    question: "I have another question",
+    question: "Do I have to download anything?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">No. TestRedact is web-based. You can use it from any modern browser including Chrome, Firefox, Edge, and Safari.</div>
     ),
   },
 ];

@@ -14,7 +14,7 @@ const faqList = [
     question: "What ways do you keep our tests secure?",
     answer: (
       <p>
-        We're hosted securely on AWS. We support single sign-on, multi-factor auth, password protected tests, and document retention periods.
+        {'We\'re hosted securely on AWS. We support single sign-on, multi-factor auth, password protected tests, and document retention periods.'}
       </p>
     )
   },
